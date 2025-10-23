@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
@@ -7,11 +8,28 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    #cardBox {
+    #cardBoxOne,
+    #cardBoxTwo {
       position: relative;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      width: 49%;
+      height: 99%;
+      position: absolute;
+    }
+
+    #cardBoxOne {
+      background-color: blue;
+      left: 5px;
+      top: 5px;
+    }
+
+    #cardBoxTwo {
+      float: right;
+      background-color: red;
+      right: 5px;
+      top: 5px;
     }
 
     .flip-card-front img,
@@ -22,8 +40,8 @@
 
     .flip-card {
       background-color: transparent;
-      width: 200px;
-      height: 200px;
+      width: 20%;
+      height: 25%;
       perspective: 1000px;
     }
 
@@ -39,6 +57,7 @@
 
     .flip .flip-card-inner {
       transform: rotateY(180deg);
+      border: 1px solid black;
     }
 
     .flip-card-front,
@@ -60,16 +79,125 @@
       color: white;
       transform: rotateY(180deg);
     }
+
+    .ui {
+      position: fixed;
+      z-index: 5;
+    }
+
+    .hide {
+      visibility: hidden;
+    }
+
+    #playerOneInfo,
+    #playerTwoInfo {
+      width: 50vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      display: flex;
+      /* フレックスボックスを有効化 */
+      justify-content: center;
+      /* 水平方向の中央揃え */
+      align-items: center;
+      /* 垂直方向の中央揃え */
+      background-color: #b9292970;
+    }
+
+    #playerOneInfo {
+      left: 0;
+    }
+
+    #playerTwoInfo {
+      right: 0;
+    }
+
+    /*
+    open
+    */
+
+    #playerOneOpen {
+      top: 0;
+      left: 0;
+    }
+
+    #playerTwoOpen {
+      top: 0;
+      right: 0;
+    }
+
+    #playerTwoOpen,
+    #playerOneOpen {
+      z-index: 10;
+      position: fixed;
+      width: 100px;
+      height: 20px;
+      background-color: rgba(0, 128, 0, 0.479);
+      color: rgba(0, 5, 0, 0.479);
+      text-align: center;
+    }
   </style>
 </head>
 
 <body>
 
-  <div id="cardBox"></div>
+  <div id="cardBoxOne"></div>
+  <div id="cardBoxTwo"></div>
+
+  <div class="ui">
+    <button id="playerOneOpen">
+      player one
+    </button>
+    <div id="playerOneInfo" class="info hide"></div>
+
+    <button id="playerTwoOpen">
+      player two
+    </button>
+    <div id="playerTwoInfo" class="info hide"></div>
+  </div>
 
   <script>
 
-    const NAMES = [
+    const GIRLS = [
+      "alex",
+      "allison",
+      "andrea",
+      "anita",
+      "ashley",
+      "belle",
+      "betty",
+      "chelsie",
+      "cheryl",
+      "cleo",
+      "ellie",
+      "emaa",
+      "holly",
+      "karen",
+      "kate",
+      "kristy",
+      "liz",
+      "maria",
+      "meredith",
+      "nina",
+      "olivia",
+      "pam",
+      "pat",
+      "rachel",
+      "ruth",
+      "sabrina",
+      "sadie",
+      "sam",
+      "sandy",
+      "sarah",
+      "sophie",
+      "steph",
+      "sue",
+      "tammy",
+      "yoko",
+      "zoe"
+    ]
+
+    const BOYS = [
       "adam",
       "adrian",
       "alfred",
@@ -109,22 +237,8 @@
     ]
 
 
-    let cardBox = document.querySelector("#cardBox");
 
-
-    for (let i = 0; i < NAMES.length; i++) {
-
-      console.log(i, `./img/boys/${NAMES[i]}.jpg`);
-      let card = createCard(i);
-
-      cardBox.appendChild(card);
-    }
-
-
-
-    function createCard(index) {
-      
-      let path = `./img/boys/${NAMES[index]}.jpg`
+    function createCard(path) {
 
       let card = document.createElement("div");
       card.className = "flip-card";
@@ -166,6 +280,71 @@
       return card;
 
 
+    }
+
+
+    window.onload = function () {
+      let boyPath = Array.from(BOYS, (name) => `./img/boys/${name}.jpg`).sort(() => Math.random() - 0.5).slice(0, 10);
+      let girlPath = Array.from(GIRLS, (name) => `./img/girls/${name}.jpg`).sort(() => Math.random() - 0.5).slice(0, 10);
+
+      let combined = boyPath.concat(girlPath);
+
+      console.log(combined.length);
+
+      let cardBox = document.querySelector("#cardBoxOne");
+      let cardBoxTwo = document.querySelector("#cardBoxTwo");
+
+
+      for (let i = 0; i < combined.length; i++) {
+
+        let card = createCard(combined[i]);
+        cardBox.appendChild(card);
+
+        let cardTwo = createCard(combined[i]);
+        cardBoxTwo.appendChild(cardTwo);
+      }
+
+
+      let playerOneOpen = document.querySelector("#playerOneOpen");
+      let playerOneInfo = document.querySelector("#playerOneInfo");
+
+
+      let playerTwoOpen = document.querySelector("#playerTwoOpen");
+      let playerTwoInfo = document.querySelector("#playerTwoInfo");
+
+      let oneIndex = Math.floor(Math.random() * combined.length);
+      let twoIndex = Math.floor(Math.random() * combined.length);
+
+      let oneCard = createCard(combined[oneIndex]);
+      let twoCard = createCard(combined[twoIndex]);
+
+      playerOneInfo.appendChild(oneCard);
+      playerTwoInfo.appendChild(twoCard);
+
+
+      playerOneOpen.addEventListener("click", () => {
+
+        if (playerOneInfo.classList.contains("hide")) {
+          playerOneInfo.classList.remove("hide");
+        }
+        else {
+          playerOneInfo.classList.add("hide");
+        }
+
+      });
+
+      playerTwoOpen.addEventListener("click", () => {
+
+        console.log("hi")
+
+        if (playerTwoInfo.classList.contains("hide")) {
+          playerTwoInfo.classList.remove("hide");
+        }
+        else {
+          playerTwoInfo.classList.add("hide");
+        }
+
+      });
     }
 
   </script>
