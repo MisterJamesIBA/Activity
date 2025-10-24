@@ -1,0 +1,132 @@
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ #cardBoxOne,
+ #cardBoxTwo {
+     position: relative;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width: 49%;
+     height: 99%;
+     position: absolute;
+ }
+
+ #cardBoxOne {
+     background-color: blue;
+     left: 5px;
+     top: 5px;
+ }
+
+ #cardBoxTwo {
+     float: right;
+     background-color: red;
+     right: 5px;
+     top: 5px;
+ }
+
+ .flip-card-front img,
+ .flip-card-back img {
+     width: 100%;
+     height: 100%;
+ }
+
+ .flip-card {
+     background-color: transparent;
+     width: 20%;
+     height: 25%;
+     perspective: 1000px;
+ }
+
+ .flip-card-inner {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     transition: transform 0.6s;
+     transform-style: preserve-3d;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ }
+
+ .flip .flip-card-inner {
+     transform: rotateY(180deg);
+     border: 1px solid black;
+ }
+
+ .flip-card-front,
+ .flip-card-back {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+ }
+
+ .flip-card-front {
+     background-color: #bbb;
+     color: black;
+ }
+
+ .flip-card-back {
+     background-color: #2980b9;
+     color: white;
+     transform: rotateY(180deg);
+ }
+
+ .ui {
+     position: fixed;
+     z-index: 5;
+ }
+
+ .hide {
+     visibility: hidden;
+ }
+
+ #playerOneInfo,
+ #playerTwoInfo {
+     width: 50vw;
+     height: 100vh;
+     position: fixed;
+     top: 0;
+     display: flex;
+     /* フレックスボックスを有効化 */
+     justify-content: center;
+     /* 水平方向の中央揃え */
+     align-items: center;
+     /* 垂直方向の中央揃え */
+     background-color: #b9292970;
+ }
+
+ #playerOneInfo {
+     left: 0;
+ }
+
+ #playerTwoInfo {
+     right: 0;
+ }
+
+ /*
+    open
+    */
+
+ #playerOneOpen {
+     bottom: 0;
+     left: 0;
+ }
+
+ #playerTwoOpen {
+     bottom: 0;
+     right: 0;
+ }
+
+ #playerTwoOpen,
+ #playerOneOpen {
+     z-index: 10;
+     position: fixed;
+     width: 50px;
+     height: 50px;
+     background-color: rgba(0, 128, 0, 0.479);
+     color: rgba(0, 5, 0, 0.479);
+     text-align: center;
+ }
