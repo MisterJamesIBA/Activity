@@ -1,0 +1,132 @@
+{
+    "story": [
+        {
+            "type": "TEXT",
+            "text": "Well, it's happened again. Your head is really pounding, and you can't really remember all the details.",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "The cramped surroundings remind you that you're jammed in a locker once again. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "They must have really hit your head hard this time because it appears that you were out for a bit: you can't hear the usual laughter of Biff wandering away after beating you and cramming you into the locker. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "A little twist and you can press the lever to open the locker from the inside.",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "The door swings open and you fall out of the locker, just managing to keep your feet. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "You put your hands up to protect yourself from the usual flurry of slaps and punches but then realize that no one is there. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "You open your eyes and look around: the entire hallway is empty. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "About that time you realize it is completely quiet. Looking up, you can see through the high windows that it is apparently early evening. You must have been knocked out for quite some time.",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "Suddenly you realize what that means: the school is closed. You're on the inside. You need to get home! You can't spend the night in the school. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "They lock the school up tight with those big chains around the doors: how are you going to get out? If you are found here in the morning, you're going to get expelled for sure. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "You have got to find a way out of this school and you've got to find a way out quickly!",
+            "add": false
+        },
+
+        {
+            "type": "TEXT",
+            "text": "Looking around, you see that you are in the main center hallway of the school. The school is mostly shaped like the letter H with two long wings and you are currently in the center connector hallway that connects the two wings. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "This is where all the lockers are for students to use. This section has lockers number 001 to 100, but there are more lockers off to the east. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "Off to the west you can see the main classroom section of the school that has a 2-story north-south hallway lined with classrooms. All of the lockers here, with the exception of the one you fell out of, appear to be locked.",
+            "add": false
+        },
+        {
+            "type": "DECISION",
+            "a": "Go east",
+            "b": "Go west",
+            "aStep": 0,
+            "bStep": 1
+        },
+        {
+            "type": "TEXT",
+            "text": "You are in the connector hallway of the school. The school is shaped like the letter H and you're in the middle. This middle section of hallway connects the west classroom wing and the east activity wing. This section also contains about half of the lockers in the school, numbered from 101 to 200. All the lockers in this section appear to be locked up tight, as they should be after school hours. To the east is the activity wing of the school, while all the typical classrooms are off to the west. Along the north wall, leading above the lockers, is the main stairway to the second floor. In fact, this is the only way students can get to the classrooms on the second floor.",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        }
+    ]
+}

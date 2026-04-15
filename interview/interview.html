@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easter Inverview</title>
+
+    <style>
+        .base {
+            display: flex;
+            /* フレックスボックスを有効化 */
+            justify-content: center;
+            /* 水平方向の中央揃え */
+            align-items: center;
+            /* 垂直方向の中央揃え */
+            height: 100vh;
+        }
+
+        #level {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="base">
+        <div class="center">
+            <h1 id="textBox">Tap the sreeen for a question.</h1>
+        </div>
+    </div>
+
+    <select name="level" id="level">
+        <option value="0">3</option>
+        <option value="1">P2</option>
+        <option value="2">P2+</option>
+        <option value="3">2</option>
+    </select>
+
+
+    <script src="./data.js"></script>
+    <script src="./interview.js"></script>
+</body>
+
+</html>

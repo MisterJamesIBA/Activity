@@ -1,0 +1,59 @@
+{
+    "story": [
+        {
+            "type": "BACKGROUND",
+            "path": "./picture/outside.jpg"
+        },
+        {
+            "type": "TEXT",
+            "text": "This is text for the story game",
+            "add": false
+        },
+        {
+            "type": "DECISION",
+        "a": "Decision one",
+        "b": "Decision two",
+        "aStep": 0,
+        "bStep": 1
+        },
+        {
+            "type": "TEXT",
+            "text": "You chose a",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "you chose b",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "This is text for the story game",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "This is the next line.",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": " this is more text added to the same line",
+            "add": true
+        },
+        {
+            "type": "TEXT",
+            "text": "this is completely new text",
+            "add": false
+        },
+        {
+            "type": "BACKGROUND",
+            "path": "./picture/dungeon-stairs.jpg"
+        },
+        {
+            "type": "TEXT",
+            "text": "change the background",
+            "add": false
+        }
+    ]
+}

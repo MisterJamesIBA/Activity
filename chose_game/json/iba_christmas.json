@@ -1,0 +1,78 @@
+{
+    "story": [
+        {
+            "type": "BACKGROUND",
+            "path": "./picture/outside.jpg"
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "",
+            "add": false
+        }
+    ]
+}

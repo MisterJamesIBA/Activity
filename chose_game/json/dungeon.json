@@ -1,0 +1,124 @@
+{
+    "story": [
+        {
+            "type": "MUSIC",
+            "path": "./audio/happy.mp3"
+        },
+        {
+            "type": "BACKGROUND",
+            "path": "./picture/outside.jpg"
+        },
+        {
+            "type": "TEXT",
+            "text": "After a long journy you have arrived at the terrible castle.",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "In this castle lives an evil wizard.",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "He has stollen all the treasure from your kingdom. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "You have come here to battle the wizard and take back the treasure that has has stollen.",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "You attempt to open the gate but it does not budge. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": " It must be locked! How will you try to enter the castle.",
+            "add": false
+        },
+        {
+            "type": "DECISION",
+            "a": "Climb into a window",
+            "b": "Kick the door down",
+            "aStep": 4,
+            "bStep": 0
+        },
+        {
+            "type": "TEXT",
+            "text": "You take a step back and get ready to kick the door as hard as you can. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "BANG!",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "... The door rattles with the impact, but it does not move at all!",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "You ancle is sore and you don't want to try kicking the door again.",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "You try to climb into the window. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "You walk under neigth the window sill.",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "The window is ten feet above the ground. You walk back and run towrds the wall. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "You lear towards the window and stretch out your arms. ",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "You fingers grab hold of the window sill and you are hanging from the window now",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "With some effor you pull yourself into the window and into the castle.",
+            "add": false
+        },
+        {
+            "type": "BACKGROUND",
+            "path": "./picture/dungeon-stairs.jpg"
+        },
+        {
+            "type": "MUSIC",
+            "path": "./audio/dungeon.mp3"
+        },
+        {
+            "type": "TEXT",
+            "text": "You jump down from the window cil and land on the ground.",
+            "add": false
+        },
+        {
+            "type": "TEXT",
+            "text": "In front of you a a door and a stair case. Which will you take?",
+            "add": false
+        },
+        {
+            "type": "DECISION",
+            "a": "Go up the stairs",
+            "b": "Go through the door",
+            "aStep": 4,
+            "bStep": 0
+        }
+    ]
+}

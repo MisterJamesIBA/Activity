@@ -1,0 +1,37 @@
+.char {
+    position: fixed;
+    max-width: 100px;
+    top: 0;
+    left: 0;
+}
+
+.char img {
+    width: 100%
+}
+
+body {
+    margin: 0;
+}
+
+
+#choseCharacter {
+    display: block;
+}
+
+.charImg {
+    width: fit-content;
+    height: fit-content;
+}
+
+.charImg img {
+    height: 100px;
+}
+
+
+.charRadio {
+    display: none;
+}
+
+.charRadio:checked + label {
+    border: 5px solid red;
+}

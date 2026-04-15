@@ -1,0 +1,24 @@
+{
+    "story": [
+        {
+            "type": "BACKGROUND",
+            "path": "./picture/outside.jpg"
+        },
+        {
+            "type": "TEXT",
+            "text": "This is text for the story game",
+            "add": false
+        },
+        {
+            "type": "DECISION",
+            "a": "Decision one",
+            "b": "Decision two",
+            "aStep": 0,
+            "bStep": 1
+        },
+        {
+            "type":"MUSIC",
+            "path":"./audio/happy.mp3"
+        }
+    ]
+}
