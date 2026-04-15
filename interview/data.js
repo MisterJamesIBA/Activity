@@ -11,7 +11,7 @@ const TWO = [
     "Some people say that school uniforms are unnecessary. What do you think about that?",
     "Some people say that students should stay abroad when they are young. What do you think about that?",
     "Some people say that using social media is dangerous for teenagers. What do you think about that?",
-    " Some people say that people should read more books instead of watching videos. What do you think about that?",
+    "Some people say that people should read more books instead of watching videos. What do you think about that?",
     "Some people say that part-time jobs are good for high school students. What do you think about that?",
     "Some people say that people should save more money for the future. What do you think about that?",
     "Some people say that animals should not be kept in zoos. What do you think about that?",
@@ -139,6 +139,10 @@ const P2 = [
     "Do you want to live in the countryside in the future?",
     "Do you want to study overseas?",
     "Do you want to have a pet when you grow up?"
+]
+
+const NEW = [
+    "Do you think animals are friendly to humans?<br>Yes. -> Why?<br>No. -> Why Not?"
 ]
 
 const THREE = [
